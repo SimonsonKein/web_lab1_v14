@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        name="viewport">
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <title>Четвертая страница</title>
+
+  <style>
+      body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .container {
+          background-image: url("bg.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+      }
+
+
+      .map_switcher {
+          transition: transform .3s ease;
+      }
+
+      .map_switcher:hover {
+          transform: translateY(10px);
+      }
+
+      .map_switcher:hover img{
+          opacity: .5;
+      }
+
+      img {
+          width: 500px;
+          height: auto;
+          transition: opacity .3s ease;
+      }
+
+      .info {
+          display: flex;
+          margin: 0 auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 60%;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="map_switcher">
+    <img alt="" src="1.jpg" usemap="#switcher">
+    <map name="switcher">
+      <area alt="page1" coords="0,0,100,300" href="index.html" id="num1" shape="rect">
+      <area alt="page2" coords="100,0,200,300" href="page1.html" id="num2" shape="rect">
+      <area alt="page3" coords="200,0,300,300" href="page2.html" id="num3" shape="rect">
+      <area alt="page4" coords="300,0,400,300" href="page3.html" id="num4" shape="rect">
+      <area alt="page5" coords="400,0,500,300" href="page4.html" id="num5" shape="rect">
+    </map>
+  </div>
+</div>
+<div class="info">
+  <h2 class="title">Китай</h2>
+  <p class="description">Фейерверки были изобретены в Китае в 12 веке н. э. В Европе фейерверк впервые появился в
+    Италии. В России мастера фейерверков появились в 1545 году при Стрелецком полку, а первый масштабный фейерверк
+    сделан в 1674 году в Устюге.</p>
+  <table>
+
+    <tr>
+      <th>Основными составными частями фейерверков являются:</th>
+    </tr>
+    <tr>
+      <td>
+        <ul>
+          <li>корпус (из картона, бумаги, алюминия, пластмасс)</li>
+          <li>заряды (вышибные, воспламенительно-разрывные и звуковые) из дымных порохов, бездымных порохов и
+            пиротехнических
+          </li>
+          <li>составов типа фотосмесей</li>
+          <li>пироэлементы в виде звёздочек, факелов, таблеток из световых, дымовых и звуковых пиротехнических
+            составов
+          </li>
+          <li>средства воспламенения — огнепроводный шнур, электровоспламенители</li>
+          <li>При горении пиротехнические составы могут развивать высокую температуру (до 3000 °C).</li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
+</html>
